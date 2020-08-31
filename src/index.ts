@@ -238,7 +238,7 @@ export const ReactMediaRecorder = ({
     status,
     isAudioMuted,
     previewStream: mediaStream.current
-      ? new MediaStream(mediaStream.current.getVideoTracks())
+      ? new MediaStream(mediaStream.current.getTracks())
       : null,
     clearBlobUrl: () => setMediaBlobUrl(null),
   });
