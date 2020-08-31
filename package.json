@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && jsmin -o ./lib/index.js ./lib/index.js",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "files": [
